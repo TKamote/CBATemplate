@@ -224,7 +224,7 @@ textarea.observation-input {
 
     .location-input {
         width: 100%;
-        max-width: none;
+        max-width: 120px;
     }
 }
 
