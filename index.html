@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CBA Template</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="header-section"></div>
+            <h1>CBA Template</h1>
+            <button onclick="exportToWord()" class="export-button">
+                Export to Word
+            </button>
+        </div>
+      <div class="location-section">
+        <span class="location-label">Location:</span>
+        <input
+          type="text"
+          class="location-input"
+          placeholder="Enter location..."
+        />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th class="functional-area">Functional Area</th>
+            <th class="photo-cell">Photograph Before</th>
+            <th class="observation-cell">Observation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="functional-area">P&S Fittings</td>
+            <td class="photo-cell">
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleImageUpload(this, 'before-1')"
+              />
+              <img class="image-preview" id="before-1" />
+              <div class="dimension-text">1.64 x 1.215 inches</div>
+            </td>
+            <td class="observation-cell">
+              <textarea
+                class="observation-input"
+                placeholder="Enter observations..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="functional-area">Ceiling</td>
+            <td class="photo-cell">
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleImageUpload(this, 'before-2')"
+              />
+              <img class="image-preview" id="before-2" />
+              <div class="dimension-text">1.64 x 1.215 inches</div>
+            </td>
+            <td class="observation-cell">
+              <textarea
+                class="observation-input"
+                placeholder="Enter observations..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="functional-area">Wall Finishes</td>
+            <td class="photo-cell">
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleImageUpload(this, 'before-3')"
+              />
+              <img class="image-preview" id="before-3" />
+              <div class="dimension-text">1.64 x 1.215 inches</div>
+            </td>
+            <td class="observation-cell">
+              <textarea
+                class="observation-input"
+                placeholder="Enter observations..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="functional-area">Floor Finishes</td>
+            <td class="photo-cell">
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleImageUpload(this, 'before-4')"
+              />
+              <img class="image-preview" id="before-4" />
+              <div class="dimension-text">1.64 x 1.215 inches</div>
+            </td>
+            <td class="observation-cell">
+              <textarea
+                class="observation-input"
+                placeholder="Enter observations..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="functional-area">Electrical Fittings</td>
+            <td class="photo-cell">
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleImageUpload(this, 'before-5')"
+              />
+              <img class="image-preview" id="before-5" />
+              <div class="dimension-text">1.64 x 1.215 inches</div>
+            </td>
+            <td class="observation-cell">
+              <textarea
+                class="observation-input"
+                placeholder="Enter observations..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="functional-area">Toilet Cubicles</td>
+            <td class="photo-cell">
+              <input
+                type="file"
+                accept="image/*"
+                onchange="handleImageUpload(this, 'before-6')"
+              />
+              <img class="image-preview" id="before-6" />
+              <div class="dimension-text">1.64 x 1.215 inches</div>
+            </td>
+            <td class="observation-cell">
+              <textarea
+                class="observation-input"
+                placeholder="Enter observations..."
+              ></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
